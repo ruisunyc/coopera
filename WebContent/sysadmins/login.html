@@ -1,0 +1,95 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>团队协作编辑平台-后台登录</title>
+<style type="text/css">
+<!--
+*{overflow:hidden; font-size:9pt;}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg.gif);
+	background-repeat: repeat-x;
+}
+-->
+</style>
+<script language="javascript" type="text/javascript">
+function onld()
+{
+	window.form1.textfield.focus();
+}
+</script>
+<script language="javascript" type="text/javascript">
+function oncls()
+{
+	window.close();
+}
+</script>
+<script language="javascript" type="text/javascript">
+function onsbt()
+{
+	if (window.form1.textfield.value == "")
+	{
+	window.alert("对不起，用户名称不能为空，请输入用户名称。");
+	window.form1.textfield.focus();
+	return false;
+	}
+	if (window.form1.textfield2.value == "")
+	{
+	window.alert("对不起，用户密码不能为空，请输入用户密码。");
+	window.form1.textfield2.focus();
+	return false;
+	}
+}
+</script>
+</head>
+<body onload="onld();">
+<form method="POST" action="usercheck.jsp" name="form1" onsubmit="return onsbt();">
+<table width="100%"  height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="561" style="background:url(images/lbg.gif)"><table width="940" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="238" style="background:url(images/login01.jpg)">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="190"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="208" height="190" style="background:url(images/login02.jpg)">&nbsp;</td>
+                <td width="518" style="background:url(images/login03.jpg)"><table width="320" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="40" height="50"><img src="images/users.gif" width="30" height="30"></td>
+                    <td width="38" height="50">用户</td>
+                    <td width="242" height="50"><input type="text" name="textfield" id="textfield" style="width:164px; height:32px; line-height:34px; background:url(images/inputbg.gif) repeat-x; border:solid 1px #d1d1d1; font-size:9pt; font-family:Verdana, Geneva, sans-serif;"></td>
+                  </tr>
+                  <tr>
+                    <td height="50"><img src="images/password.gif" width="28" height="32"></td>
+                    <td height="50">密码</td>
+                    <td height="50"><input type="password" name="textfield2" id="textfield2" style="width:164px; height:32px; line-height:34px; background:url(images/inputbg.gif) repeat-x; border:solid 1px #d1d1d1; font-size:9pt; "></td>
+                  </tr>
+                  <tr>
+                    <td height="40">&nbsp;</td>
+                    <td height="40">&nbsp;</td>
+                    <td height="60">
+					<input type="image" alt="点击此处系统登录" id="sbt" name="sbt" border="0" src="images/login_btm_01.jpg" width="95" height="34">&nbsp;
+					<img style="cursor:hand" alt="点击此处退出本系统" border="0" src="images/login_btm_02.jpg" width="95" height="34" onclick="oncls();"></td>
+                  </tr>
+                </table></td>
+                <td width="214" style="background:url(images/login04.jpg)" >&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="133" style="background:url(images/login05.jpg)">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

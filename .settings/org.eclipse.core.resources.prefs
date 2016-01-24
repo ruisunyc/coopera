@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/web.xml=UTF-8
+encoding//WebContent/group/index.html=UTF-8
+encoding//WebContent/group/layout.css=UTF-8
+encoding//WebContent/group/teamManage.jsp=UTF-8
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/register.jsp=UTF-8
+encoding//WebContent/teamCoop.html=UTF-8
+encoding//src/com/lib/sys/MD5.java=UTF-8
+encoding/<project>=UTF-8
+separateDerivedEncodings=true

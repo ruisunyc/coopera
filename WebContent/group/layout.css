@@ -1,0 +1,12 @@
+
+body { font-family:Verdana; font-size:14px; margin:0; line-height:100%;}
+
+#container {margin:0 auto; width:900px;background:#ffffff;}
+#header { height:20px; background:url(bg.gif) right 0 repeat-y; ; margin-bottom:2px;}
+#menu { height:30px; background:#0080c0;; margin-bottom:2px;}
+#mainContent { 
+	overflow:auto;zoom:1; margin-bottom:5px;height:700px}
+#sidebar { float:right; width:200px; background:#ffffff;}
+#content { height:100%;float:left; width:100%; padding:10px; background:#ffffff;}
+#footer { height:40px; background:#0080c0 ;}
+.clearfloat { clear:both; height:1px; font-size: 1px; line-height: 1px;}

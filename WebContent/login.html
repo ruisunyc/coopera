@@ -1,0 +1,142 @@
+
+<html>
+<head>
+<!-- 前台登陆页面 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: #D2E9FF;
+	width: 850px;
+	height: 500px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: #d2e9ff;
+	background-image: url(images/login/login.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1000px;;
+	height: 460px;
+}
+label {
+	font-size: 18px;
+	color: green;
+	font: italic;
+	font-family: "Microsoft YaHei"
+}
+.STYLE3 {
+	color: #528311;
+	font-size: 12px;
+}
+.STYLE4 {
+	color: #42870a;
+	font-family: "方正大黑简体";
+	font-size: 50px;
+}
+-->
+</style>
+<style type="text/css">
+</style>
+<script src="oa.js"></script>
+<script src="ajax.js"></script>
+<script  type="text/JavaScript">
+	function validate_form() {
+		if (document.form1.username.value == "") {
+			alert("帐号不能为空!");
+			return false;
+		}
+		if (bytelength(document.form1.username.value) < 1
+				|| bytelength(document.form1.username.value) > 50) {
+
+			alert("帐号长度不合法!");
+			return false;
+		}
+		if (!checkPassword(document.form1.username.value)) {
+
+			alert("请输入字母或数字");
+			return false;
+		}
+
+		if (document.form1.password.value == "") {
+			alert("用户密码不能为空!");
+			return false;
+		}
+		if (!checkPassword(document.form1.password.value)) {
+
+			alert("请输入字母或数字");
+			return false;
+		}
+		return true;
+	}
+	function login() {
+		if (validate_form())
+			document.form1.submit();
+		else
+			return;
+	}
+</script>
+</head>
+<body>
+	<div id="main" style="">
+		<form method="post" name="form1" action="login">
+			<table
+				style="margin-left: 400px; height: 160px; margin-top: 180px; border: 0; cellpadding: 1; cellspacing: 2; align: left; width: 100%">
+				<tr>
+					<td width="22%" height="22"><div align="right">
+							<span class="STYLE3"><label style="">用户名:</label></span>
+						</div></td>
+					<td width="51%" height="22">
+						<div style="margin-left: 15px">
+							<input type="text" name="username" id="username" size="24"
+								style="height: 20px; background-color: #faa0000; border: solid 1px #88b5d1;">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="22%" height="22" valign="center"><div align="right">
+							<span class="STYLE3"><label>密&nbsp;码:</label></span>
+						</div></td>
+					<td>
+						<div style="margin-left: 15px">
+							<input type="password" name="password" id="password" size="24"
+								style="height: 20px; background-color: #faa0000; border: solid 1px #88b5d1;">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="22%" height="22">&nbsp;</td>
+					<td valign="middle">
+						<div style="margin-left: 25px">
+							<p style="font: lighter; font-size: 13px">
+								<input name="session" type="checkbox" value=""
+									style="border: thin;" />记住我的登录状态
+							</p>
+							<button type="submit"
+								style="font-size: 14px; font: lighter; border: none; width: 60px; position: absolute; margin-left: 560px; margin-top: 3px; left: 135px; top: 305px; cursor: pointer; background-color: white;; color: #528311">
+								登 陆</button>
+							</href>
+							<!-- 					 <img src="images/login/login.png" style="cursor:pointer" onclick="document.forms[0].submit();"/> -->
+							<!-- 					  <label style="font: lighter;font-size: 14px;color: green;"> -->
+							<!-- 					     <a href="zhaohui.html" style="text-decoration: none;">忘记密码？</a> -->
+							<!-- 					  </label> -->
+							<label
+								style="font: lighter; font-size: 12px; color: blue; margin-left: 50px">
+								<a href="register.jsp" style="text-decoration: none;">还没有账号
+									? 点击注册 </a>
+							</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
