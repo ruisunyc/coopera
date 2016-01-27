@@ -1169,7 +1169,7 @@ CREATE TABLE `user` (
   `sex` varchar(10) DEFAULT '' COMMENT '性别',
   `mail` varchar(30) DEFAULT '' COMMENT '电子邮件',
   `phone` varchar(20) DEFAULT '' COMMENT '电话',
-  `address` varchar(80) DEFAULT '' COMMENT '家庭住址',
+  `address` varchar(80) DEFAULT '' COMMENT '家庭住址',/**地址*/
   `login_count` varchar(50) DEFAULT '' COMMENT '登陆次数',
   `login_time` datetime DEFAULT NULL,
   `register_time` datetime DEFAULT NULL,
